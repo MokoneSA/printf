@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <limits.h>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
@@ -51,6 +52,7 @@ int print_string(va_list types, char buffer[],
 			int flags, int width, int precision, int size);
 int print_percent(va_list types, char buffer[],
 			int flags, int width, int precision, int size);
+
 int print_int(va_list types, char buffer[],
 			int flags, int width, int precision, int size);
 int print_binary(va_list types, char buffer[],
